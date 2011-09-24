@@ -4,15 +4,18 @@ This module takes in the output from a "git log --format=raw -- [file]" operatio
 
 #Usage
 
+```javascript
 var GitLogParser = require("gitlogparser");
 var gitLogParser = new GitLogParser();
 
 // Run the git log operation and get a string back
-var gLogOut = "[all output";
+
+var gLogOut = "[all output]";
 
 gitLogParser.parseLog(gLogOut);
 
 // Get the results of the parsing
 var parseResult = gitLogParser.getLogData();
+```
 
 From here you can iterate over each item in the array and do something with it.
