@@ -44,6 +44,7 @@ module.exports = (function() {
 
             for (var lineIt in lines)
                 this.parseLine(lines[lineIt]);
+            this.arrLogData.push(this.currentLine);
         },
 
         getLogData : function() {
